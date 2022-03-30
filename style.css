@@ -2,11 +2,16 @@
 :root {
     --bg-color: #252525;
     --text-color: #b3b3b3;
-    --h-color: #c1c1c1;
     --a-color:  #9b9b9b;
-    --a-hover-color: #28f8c6;
-    --a-after: #28f8c6;
-  }
+    --nav-underline: #28f8c6;
+    --contacts-light: #47f1c8;
+    --contacts-shadow-light: #47f1c8;
+    --projects-arrow-light: #47f1c8;
+    --skills-bg-bar: #483535;
+    --skills-active-bar: #28f8c6;
+    --skills-boxshadow-bar: 0 0 10px #28f8c694;
+    --section-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
 
 /* general styles */
 *,
@@ -57,7 +62,7 @@ a {
 
 /*header */
 .header {
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    box-shadow: var(--section-shadow);
 }
 
 .header__menu {
@@ -81,14 +86,12 @@ a {
 
 .nav__item a{
     display: inline-block;
-    color: var(--a-color);
     line-height: 1.5;
-    text-decoration: none;
     cursor: pointer;
 }
 
 .nav__item a:after {
-    background-color: var(--a-after);
+    background-color: var(--nav-underline);
     display: block;
     content: "";
     height: 2px;
@@ -107,7 +110,7 @@ a {
 .sections {
     display: flex;
     flex-wrap: wrap;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    box-shadow: var(--section-shadow);
 }
 
 .section {
@@ -173,7 +176,7 @@ li.contacts__item:before {
 }
 
 li.contacts__item:hover:before {
-    background-color: #47f1c8;
+    background-color: var(--contacts-light);
     box-shadow: 0px 0px 35px #47f1c8;
 }
 
@@ -208,7 +211,7 @@ li.projects__item:before {
 }
 
 li.projects__item:hover:before {
-    color: #47f1c8;
+    color: var(--projects-arrow-light);
 }
 
 /* code */
@@ -250,19 +253,19 @@ li {
 }
 
 .bar{
-    background-color: #353b48;
+    background-color: var(--skills-bg-bar);
     display: block;
     height: 2px;
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 3px;
     /* overflow: hidden; */
-    box-shadow: 0 0 10px #28f8c694;
+    box-shadow: var(--skills-boxshadow-bar);
 }
 
 .bar span {
     height: 2px;
     float: left;
-    background-color: #28f8c6;
+    background-color: var(--skills-active-bar);
 }
 
 .html {
@@ -280,9 +283,9 @@ li {
     animation: flexbox 2s;
 }
 
-.scss {
+.JavaScript {
     width: 50%;
-    animation: scss 2s;
+    animation: JavaScript 2s;
 }
 
 .github {
@@ -325,7 +328,7 @@ li {
     }
 }
 
-@keyframes scss {
+@keyframes JavaScript {
     0%{
         width: 0%;
     }
@@ -360,7 +363,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    box-shadow: var(--section-shadow);
 }
 
 .footer__item {
