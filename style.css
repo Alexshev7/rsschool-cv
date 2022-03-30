@@ -387,6 +387,10 @@ li {
     .porfile__data img {
         width: 250px;
     }
+    .porfile__text {
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+    }
     .porfile__title {
         font-size: 28px;
     }
