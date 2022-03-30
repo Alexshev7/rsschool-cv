@@ -43,3 +43,12 @@ function multiply(a, b){
 - Russian \- Native
 
 ---
+
+### Completed projects:
+
+[My CV MD](https://alexshev7.github.io/rsschool-cv/cv) <br>
+[My CV with HTML and CSS](https://alexshev7.github.io/rsschool-cv) <br>
+[Photographer's portfolio](https://rolling-scopes-school.github.io/alexshev7-JSFEPRESCHOOL/portfolio/) <br>
+[Audio-player](https://rolling-scopes-school.github.io/alexshev7-JSFEPRESCHOOL/audio-player/)
+
+---dasf
