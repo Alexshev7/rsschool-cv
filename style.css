@@ -5,7 +5,7 @@
     --a-color:  #9b9b9b;
     --nav-underline: #28f8c6;
     --contacts-light: #47f1c8;
-    --contacts-shadow-light: #47f1c8;
+    --contacts-shadow-light: 0px 0px 35px #47f1c8;
     --projects-arrow-light: #47f1c8;
     --skills-bg-bar: #483535;
     --skills-active-bar: #28f8c6;
@@ -177,7 +177,7 @@ li.contacts__item:before {
 
 li.contacts__item:hover:before {
     background-color: var(--contacts-light);
-    box-shadow: 0px 0px 35px #47f1c8;
+    box-shadow: var(--contacts-shadow-light);
 }
 
 .contacts__item a {
