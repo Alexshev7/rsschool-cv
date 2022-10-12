@@ -219,11 +219,14 @@ pre {
     padding: 20px;
     font-size: 16px;
     margin: 0;
-    background-color: #000;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .code-keyword {
-    color:#b294bb;
+    color:#939393;
 }
 
 .code-fname {
@@ -231,8 +234,17 @@ pre {
 }
 
 .code-var {
-    color: #89b6c5;
+    color: #b294bb;
 }
+
+.obj-method {
+    color: #00bfff;
+}
+
+.new-obj {
+    color: #89429d;
+}
+
 
 /* skills */
 .skills__title {

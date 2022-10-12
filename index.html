@@ -129,10 +129,25 @@
                     </section>
                     <section class="section section-code" id="code">
                         <h3 class="section__title">Code example</h3>
-                        <pre><code><span class="code-keyword">function</span> <span class="code-fname">multiply</span>(<span class="code-var">a</span>, <span class="code-var">b</span>) {
-    <span class="code-keyword">return</span> <span class="code-var">a</span> * <span class="code-var">b</span>;
-}</code>
+                        <pre><code><span class="code-keyword">function</span> <span class="code-fname">unluckyDays</span>(<span class="code-var">year</span>) {
+
+    let <span class="code-var">count</span> = 0;
+
+    for (let i = 0; i < 12; i++) {
+        let <span class="code-var">day</span> = <span class="new-obj">new</span> Date(<span class="code-var">year</span>, i, 13);
+        if (<span class="code-var">day</span>.<span class="obj-method">getDay()</span> === 5) {
+            <span class="code-var">count++</span>;
+        }
+    }
+
+    <span class="code-keyword">return</span> <span class="code-var">count</span>;
+}
+    </code>
 </pre>
+
+<!-- <span class="code-keyword">function</span> <span class="code-fname">multiply</span>(<span class="code-var">a</span>, <span class="code-var">b</span>) {
+    <span class="code-keyword">return</span> <span class="code-var">a</span> * <span class="code-var">b</span>;
+} -->
                         <div class="code"></div>
                     </section>
                     <section class="section section-education" id="education">
